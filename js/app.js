@@ -20,7 +20,10 @@ var allFeeds = [
     }, {
         name: 'Linear Digressions',
         url: 'http://feeds.feedburner.com/udacity-linear-digressions'
-    }
+    }, {
+        name: 'International Hobo',
+        url: 'http://feeds.feedburner.com/ihobo'
+    } //added for lulz
 ];
 
 /* This function starts up our application. The Google Feed
@@ -29,7 +32,7 @@ var allFeeds = [
  */
 function init() {
     // Load the first feed we've defined (index of 0).
-    loadFeed(0);
+    loadFeed(4); //0
 }
 
 /* This function performs everything necessary to load a
