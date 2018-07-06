@@ -17,7 +17,7 @@ $(function() {
 
 
     // 2/3
-    /* TODO: Write a test that loops through each feed
+    /* Write a test that loops through each feed
      * in the allFeeds object and ensures it has a name defined
      * and that the name is not empty.
      */
@@ -32,7 +32,7 @@ $(function() {
 
 
     // 3/3
-    /* TODO: Write a test that loops through each feed
+    /* Write a test that loops through each feed
      * in the allFeeds object and ensures it has a URL defined
      * and that the URL is not empty.
      */
@@ -45,7 +45,6 @@ $(function() {
          expect(url).toContain('http');
        });
      });
-
 
   });
 
@@ -62,6 +61,10 @@ $(function() {
      * hiding/showing of the menu element.
      */
 
+     it('is hidden by default', function() {
+       expect($('body').hasClass('menu-hidden')).toBe(true);
+     });
+
 
     //2/2
      /* TODO: Write a test that ensures the menu changes
@@ -69,6 +72,14 @@ $(function() {
       * should have two expectations: does the menu display when
       * clicked and does it hide when clicked again.
       */
+
+      it('changes visibility after menu icon is clicked', function() {
+        $('.menu-icon-link').click();
+        expect($('body').hasClass('menu-hidden')).toBe(false);
+        $('.menu-icon-link').click();
+        expect($('body').hasClass('menu-hidden')).toBe(true);
+      })
+
   });
 
 
