@@ -23,22 +23,19 @@ It requires writing four suites of tests checking feed reader's functionalities.
 > (For RSS Feeds suite, testing if all feeds are named and contain urls)
 
 > * are defined
-
 > * have a defined name
-
 > * have a defined url
 
 > (For The menu suite, testing menu's visibility and default class)
 
 > * is hidden by default
-
 > * changes visibility after menu icon is clicked
 
 > (For Initial Entries suite, testing if there are entries inside the feed container div)
 
-> there is at least one .entry within .feed container
+> * there is at least one .entry within .feed container
 
->(For New Feed Selection suite, testing if content changes when user clicks on a different feed from the app's menu)
+> (For New Feed Selection suite, testing if content changes when user clicks on a different feed from the app's menu)
 
 > * changes content when new feed is loaded
 
