@@ -89,13 +89,25 @@ $(function() {
 
 
     //1/1
-    /* TODO: Write a test that ensures when the loadFeed
+    /* Write a test that ensures when the loadFeed
      * function is called and completes its work, there is at least
      * a single .entry element within the .feed container.
      * Remember, loadFeed() is asynchronous so this test will require
      * the use of Jasmine's beforeEach and asynchronous done() function.
      */
 
+     beforeEach(function(done) {
+       loadFeed(0, function() {
+         done();
+       });
+     });
+
+     it('there is at least one .entry within .feed container', function(done) {
+       //TODO: not so sure about this one
+       expect($('.feed').innerHTML).not.toBe('');
+       expect($('.entry-link').length).not.toBe(0);
+       done();
+     });
 
   });
 
