@@ -116,14 +116,30 @@ $(function() {
   // Suite IV
   describe('New Feed Selection', function() {
 
-
     //1/1
-    /* TODO: Write a test that ensures when a new feed is loaded
+    /* Write a test that ensures when a new feed is loaded
      * by the loadFeed function that the content actually changes.
      * Remember, loadFeed() is asynchronous.
      */
 
-  });
+     // Two feeds that should load one after another
+     let feedFour, feedZero;
 
+     beforeEach(function(done) {
+       loadFeed(4, function() {
+         feedFour = $('.feed').html();
+         loadFeed(0, function() {
+           feedZero = $('.feed').html();
+           done();
+         });
+       });
+     });
+
+    it ('changes content when new feed is loaded', function(done) {
+      expect(feedFour).not.toEqual(feedZero);
+      done();
+    })
+
+  });
 
 }());
