@@ -102,9 +102,9 @@ $(function() {
        });
      });
 
-     it('there is at least one .entry within .feed container', function(done) {
+     it('there is at least one .entry within .feed container', function() {
        expect($('.feed .entry-link').length).toBeGreaterThan(0);
-       done();
+
      });
 
   });
@@ -133,9 +133,9 @@ $(function() {
        });
      });
 
-    it ('changes content when new feed is loaded', function(done) {
+    it ('changes content when new feed is loaded', function() {
       expect(feedFour).not.toEqual(feedZero);
-      done();
+
     })
 
   });
