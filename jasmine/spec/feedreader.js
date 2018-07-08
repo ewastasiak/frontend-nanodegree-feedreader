@@ -103,9 +103,7 @@ $(function() {
      });
 
      it('there is at least one .entry within .feed container', function(done) {
-       //TODO: not so sure about this one
-       expect($('.feed').innerHTML).not.toBe('');
-       expect($('.entry-link').length).not.toBe(0);
+       expect($('.feed .entry-link').length).toBeGreaterThan(0);
        done();
      });
 
