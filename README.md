@@ -54,3 +54,13 @@ Edit tests inside the spec file in **./jasmine/spec/feedreader.js**, review the 
 * [Udacity JavaScript testing course](https://www.udacity.com/course/ud549)
 * [Required project assets](http://github.com/udacity/frontend-nanodegree-feedreader)
 * [Jasmine documentation](http://jasmine.github.io)
+
+---
+
+# About Udacity and Google Scholarships
+
+[Udacity blog entry announcing Google Developer Challenge 2017/2018](https://blog.udacity.com/2017/09/announcing-60000-challenge-scholarships-udacity-google.html)
+
+[Information on all Google Scholarship tracks](https://www.udacity.com/google-scholarships)
+
+**[Visit Udacity scholarships page](https://www.udacity.com/scholarships)**
