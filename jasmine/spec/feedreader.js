@@ -104,7 +104,6 @@ $(function() {
 
      it('there is at least one .entry within .feed container', function() {
        expect($('.feed .entry-link').length).toBeGreaterThan(0);
-
      });
 
   });
@@ -135,7 +134,6 @@ $(function() {
 
     it ('changes content when new feed is loaded', function() {
       expect(feedFour).not.toEqual(feedZero);
-
     })
 
   });
